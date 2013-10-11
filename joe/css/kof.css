@@ -1636,7 +1636,7 @@ textarea::-webkit-input-placeholder {
 	line-height:30px;
 	margin-right:10px;
 }
-.form-c span{
+.form-c span.help{
 	color:#999;
 	margin-left:5px;
 }
