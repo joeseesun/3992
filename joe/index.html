@@ -4,67 +4,25 @@
 	<meta name="keywords" content="css test,css" />
 	<meta name="description" content="test is great" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<title>HTML5</title>
+	<title>中国建材网</title>
 	<link rel="shortcut icon" href="" />
-	<link rel="stylesheet" href="__PUBLIC__/Css/kof.css" type="text/css" />
-	<link rel="stylesheet" href="__PUBLIC__/Css/fontawesome/font-awesome.min.css" type="text/css" />
-	<load href="__PUBLIC__/Js/jquery.js" />
+	<link rel="stylesheet" href="css/kof.css" type="text/css" />
+	<link rel="stylesheet" href="css/fontawesome/font-awesome.min.css" type="text/css" />
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/kof.js"></script>
 	<!--[if IE 7]>
-	  <link rel="stylesheet" href="__PUBLIC__/css/fontawesome/font-awesome-ie7.min.css">
+	  <link rel="stylesheet" href="css/fontawesome/font-awesome-ie7.min.css">
 	<![endif]-->
-	<script type="text/javascript">
-		(function($){
-		$.fn.hoverDelay = function(options){
-		var defaults = {
-		hoverDuring: 200,
-		outDuring: 200,
-		hoverEvent: function(){
-		    $.noop();
-		},
-		outEvent: function(){
-		    $.noop();    
-		}
-		};
-		var sets = $.extend(defaults,options || {});
-		var hoverTimer, outTimer;
-		return $(this).each(function(){
-		$(this).hover(function(){
-		    clearTimeout(outTimer);
-		    hoverTimer = setTimeout(sets.hoverEvent, sets.hoverDuring);
-		},function(){
-		    clearTimeout(hoverTimer);
-		    outTimer = setTimeout(sets.outEvent, sets.outDuring);
-		});    
-		});
-		}      
-		})(jQuery);
-		
-			function hoverEffect(id,classname,target){
-				$(id).hoverDelay({
-				    hoverEvent: function(){
-						$(target).addClass(classname);
-					},
-					outEvent: function(){
-						$(target).removeClass(classname);
-					}
-				});
-		    }
-		    $(function(){
-			   hoverEffect("#dashboard","menu-hover","#dashboard");
-			   hoverEffect("#sitemap","menu-hover","#sitemap");
-			   hoverEffect("#search-btn","borange",".search");
-			});
-		</script>
 	<body>
 		<div id="topheader" class="mb10">
 			<div class="container">
 				<h1 class="f14 dib l lh28 n ml5">中国建材网</h1>
 				<ul class="r lh28">
-				<li class="di l"><a class="brc plr10" href="login" rel="nofollow"><b class="icon-user cf60"></b> 登录</a></li>
-				<li class="di l"><a class="brc plr10"  href="reg" rel="nofollow">注册</a></li>
+				<li class="di l"><a class="brc plr10" href="login.html" rel="nofollow"><b class="icon-user cf60"></b> 登录</a></li>
+				<li class="di l"><a class="brc plr10"  href="reg.html" rel="nofollow">注册</a></li>
 				<li class="di menu" id="dashboard">
 						<div class="menu-hd">
-							<a href="http://www.huangye88.com/" target="_blank" title="免费发布信息">我的建材网</a><i><em></em><span></span></i>
+							<a href="index.html" target="_blank" title="免费发布信息">我的建材网</a><i><em></em><span></span></i>
 						</div>
 						<div class="menu-bd menu-list">
 							<div class="menu-bd-panel" style="width:91px;">
@@ -222,7 +180,7 @@
 			</div> 
 		</div>
 		<div class="header container">
-		   <h2 class="logo"><a href="#" title="中国建材网"><img src="http://static.huangye88.com/images/new/logoi.jpg" alt="国内领先的建材网-中国建材网"></a></h2>
+		   <h2 class="logo"><a href="index.html" title="中国建材网"><img src="http://static.huangye88.com/images/new/logoi.jpg" alt="国内领先的建材网-中国建材网"></a></h2>
 		   <form method="post" action="#" id="search-query" name="search">
 		       <div id="search" class="search">
 				   <div class="search-wrap" >
