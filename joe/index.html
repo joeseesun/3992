@@ -1,0 +1,743 @@
+<!DOCTYPE HTML>
+<html>
+	<meta charset='utf-8' />
+	<meta name="keywords" content="css test,css" />
+	<meta name="description" content="test is great" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>HTML5</title>
+	<link rel="shortcut icon" href="" />
+	<link rel="stylesheet" href="__PUBLIC__/Css/kof.css" type="text/css" />
+	<link rel="stylesheet" href="__PUBLIC__/Css/fontawesome/font-awesome.min.css" type="text/css" />
+	<load href="__PUBLIC__/Js/jquery.js" />
+	<!--[if IE 7]>
+	  <link rel="stylesheet" href="__PUBLIC__/css/fontawesome/font-awesome-ie7.min.css">
+	<![endif]-->
+	<script type="text/javascript">
+		(function($){
+		$.fn.hoverDelay = function(options){
+		var defaults = {
+		hoverDuring: 200,
+		outDuring: 200,
+		hoverEvent: function(){
+		    $.noop();
+		},
+		outEvent: function(){
+		    $.noop();    
+		}
+		};
+		var sets = $.extend(defaults,options || {});
+		var hoverTimer, outTimer;
+		return $(this).each(function(){
+		$(this).hover(function(){
+		    clearTimeout(outTimer);
+		    hoverTimer = setTimeout(sets.hoverEvent, sets.hoverDuring);
+		},function(){
+		    clearTimeout(hoverTimer);
+		    outTimer = setTimeout(sets.outEvent, sets.outDuring);
+		});    
+		});
+		}      
+		})(jQuery);
+		
+			function hoverEffect(id,classname,target){
+				$(id).hoverDelay({
+				    hoverEvent: function(){
+						$(target).addClass(classname);
+					},
+					outEvent: function(){
+						$(target).removeClass(classname);
+					}
+				});
+		    }
+		    $(function(){
+			   hoverEffect("#dashboard","menu-hover","#dashboard");
+			   hoverEffect("#sitemap","menu-hover","#sitemap");
+			   hoverEffect("#search-btn","borange",".search");
+			});
+		</script>
+	<body>
+		<div id="topheader" class="mb10">
+			<div class="container">
+				<h1 class="f14 dib l lh28 n ml5">中国建材网</h1>
+				<ul class="r lh28">
+				<li class="di l"><a class="brc plr10" href="login" rel="nofollow"><b class="icon-user cf60"></b> 登录</a></li>
+				<li class="di l"><a class="brc plr10"  href="reg" rel="nofollow">注册</a></li>
+				<li class="di menu" id="dashboard">
+						<div class="menu-hd">
+							<a href="http://www.huangye88.com/" target="_blank" title="免费发布信息">我的建材网</a><i><em></em><span></span></i>
+						</div>
+						<div class="menu-bd menu-list">
+							<div class="menu-bd-panel" style="width:91px;">
+								<a href="#" target="_top"><b class="icon-edit gc"></b> 我的发布</a>
+								<a href="#" target="_top"><b class="icon-bell gc"></b> 收录提醒</a>
+								<a href="#" target="_top"><b class="icon-cog gc"></b> 账号管理</a>
+							</div>
+						</div>
+				</li>
+				<li class="di l"><span class="brc lh12 h12"></span></li>
+				<li class="di menu" id="sitemap">
+						<div class="menu-hd">
+							<a href="#"><b class="icon-sitemap cf60"></b> 网站导航</a><i><em></em><span></span></i>
+						</div>
+						<div class="menu-bd menu-list">
+							<div class="menu-bd-panel">
+								<div class="mod mod-a">
+									<div class="mod-wrap">
+										<h3>地板</h3>
+										<ul>
+											<li><a href="cpvlist_43.htm">实木地板</a></li>
+											<li><a href="cpvlist_42.htm">实木复合地板</a></li>
+											<li><a href="cpvlist_39.htm">强化地板</a></li>
+											<li><a href="cpvlist_942.htm">强化复合地板</a></li>
+											<li><a href="cpvlist_38.htm">软木地板</a></li>
+											<li><a href="cpvlist_33.htm">塑胶地板</a></li>
+											<li><a href="cpvlist_765.htm">PVC地板</a></li>
+											<li><a href="cpvlist_820.htm">运动地板</a></li>
+											<li><a href="cpvlist_940.htm">户外地板</a></li>
+											<li><a href="cpvlist_868.htm">木塑地板</a></li>
+											<li><a href="cpvlist_37.htm">竹地板</a></li>
+											<li><a href="cpvlist_941.htm">石木地板</a></li>
+											<li><a href="cpvlist_943.htm">石塑地板</a></li>
+											<li><a href="cpvlist_757.htm">防静电地板</a></li>
+											<li><a href="cpvlist_40.htm">橡胶地板</a></li>
+											<li><a href="cpvlist_1323.htm">塑胶跑道</a></li>
+											<li><a href="cpvlist_789.htm">环氧地坪</a></li>
+											<li><a href="cpvlist_790.htm">耐磨地坪</a></li>
+											<li><a href="cpvlist_791.htm">艺术地坪</a></li>
+											<li><a href="cpvlist_756.htm">地毯</a></li>
+											<li><a href="cpvlist_945.htm">地垫</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="mod mod-b">
+									<div class="mod-wrap">
+										<h3>卫浴</h3>
+										<ul>
+											<li><a href="cplist_1.htm" class="a4">卫浴</a></li>
+<li><a href="cpvlist_3.htm">水龙头</a></li>
+										<li><a href="cpvlist_1200.htm">感应水龙头</a></li>
+										<li><a href="cpvlist_1127.htm">电热水龙头</a></li>
+										<li><a href="cpvlist_11.htm">电热水器</a></li>
+										<li><a href="cpvlist_1281.htm">燃气热水器</a></li>
+										<li><a href="cpvlist_1129.htm">太阳能热水器</a></li>
+										<li><a href="cpvlist_1128.htm">空气能热水器</a></li>
+										<li><a href="cpvlist_763.htm">洗手盆</a></li>
+										<li><a href="cpvlist_755.htm">浴室柜</a></li>
+										<li><a href="cpvlist_859.htm">感应洁具</a></li>
+										<li><a href="cpvlist_4.htm">坐便器</a></li>
+										<li><a href="cpvlist_1174.htm">马桶盖</a></li>
+										<li><a href="cpvlist_867.htm">干手机</a></li>
+										<li><a href="cpvlist_1201.htm">皂液器</a></li>
+										<li><a href="cpvlist_898.htm">蹲便器</a></li>
+										<li><a href="cpvlist_858.htm">小便器</a></li>
+										<li><a href="cpvlist_764.htm">淋浴房</a></li>
+										<li><a href="cpvlist_899.htm">汗蒸房</a></li>
+										<li><a href="cpvlist_1126.htm">木浴桶</a></li>
+										<li><a href="cpvlist_779.htm">毛巾架</a></li>
+										<li><a href="cpvlist_1280.htm">电热毛巾架</a></li>
+										<li><a href="cpvlist_778.htm">花洒</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="mod mod-c">
+									<div class="mod-wrap">
+										<h3>地板</h3>
+										<ul>
+											<li><a href="#" target="_top">地板</a></li>
+											<li><a href="#" target="_top">卫浴</a></li>
+											<li><a href="#" target="_top">涂料</a></li>
+											<li><a href="#" target="_top">灯具</a></li>
+											<li><a href="#" target="_top">五金</a></li>
+											<li><a href="#" target="_top">地板</a></li>
+											<li><a href="#" target="_top">卫浴</a></li>
+											<li><a href="#" target="_top">涂料</a></li>
+											<li><a href="#" target="_top">灯具</a></li>
+											<li><a href="#" target="_top">五金</a></li>
+											<li><a href="#" target="_top">地板</a></li>
+											<li><a href="#" target="_top">卫浴</a></li>
+											<li><a href="#" target="_top">涂料</a></li>
+											<li><a href="#" target="_top">灯具</a></li>
+											<li><a href="#" target="_top">五金</a></li>
+											<li><a href="#" target="_top">地板</a></li>
+											<li><a href="#" target="_top">卫浴</a></li>
+											<li><a href="#" target="_top">涂料</a></li>
+											<li><a href="#" target="_top">灯具</a></li>
+											<li><a href="#" target="_top">五金</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="mod mod-d">
+									<div class="mod-wrap">
+										<h3>建材网分站</h3>
+										<ul>
+										 <li><a href="weiyu">卫浴</a></li>
+										 <li><a href="tuliao">涂料</a></li>
+										 <li><a href="menchuang">门窗</a></li>
+										 <li><a href="dengju">灯具</a></li>
+										 <li><a href="jiaju">家具</a></li>
+										 <li><a href="jiadian">家电</a></li>
+										 <li><a href="jiajuzhuangshi">家居</a></li>
+										 <li><a href="wujin">五金</a></li>
+										 <li><a href="diaoding">吊顶</a></li>
+										 <li><a href="geduan">隔断</a></li>
+										 <li><a href="chuanglian">窗帘</a></li>
+										 <li><a href="chuju">厨具</a></li>
+										 <li><a href="suoju">锁具</a></li>
+										 <li><a href="kongtiao">空调</a></li>
+										 <li><a href="anfang">安防</a></li>
+										 <li><a href="gangcai">钢材</a></li>
+										 <li><a href="lvcai">铝材</a></li>
+										 <li><a href="guancai">管材</a></li>
+										 <li><a href="guanjian">管件</a></li>
+										 <li><a href="famen">阀门</a></li>
+										 <li><a href="beng">泵</a></li>
+										 <li><a href="shicai">石材</a></li>
+										 <li><a href="zhuanwa">砖瓦</a></li>
+										 <li><a href="mucai">木材</a></li>
+										 <li><a href="bancai">板材</a></li>
+										 <li><a href="shuini">水泥</a></li>
+										 <li><a href="suliao">塑料</a></li>
+										 <li><a href="boli">玻璃</a></li>
+										 <li><a href="muqiang">墙材</a></li>
+										 <li><a href="fangshui">防水</a></li>
+										 <li><a href="yuanyi">园艺</a></li>
+										 <li><a href="louti">楼梯</a></li>
+										 <li><a href="dianti">电梯</a></li>
+										 <li><a href="diangong">电工</a></li>
+										 <li><a href="dianqi">电气</a></li>
+										 <li><a href="baozhuang">包装</a></li>
+										 <li><a href="huodongfang">活动房</a></li>
+										 <li><a href="gangjiegou">钢结构</a></li>
+										 <li><a href="yiqiyibiao">仪器仪表</a></li>
+										 <li><a href="gongchengjixie">工程机械</a></li>
+										 <li><a href="xinxingjiancai">新型建材</a></li>
+										 <li><a href="diandongche">电动车</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div> 
+		</div>
+		<div class="header container">
+		   <h2 class="logo"><a href="#" title="中国建材网"><img src="http://static.huangye88.com/images/new/logoi.jpg" alt="国内领先的建材网-中国建材网"></a></h2>
+		   <form method="post" action="#" id="search-query" name="search">
+		       <div id="search" class="search">
+				   <div class="search-wrap" >
+					     <input  type="search" class="w200 f14 g6">
+						 <button name="search" type="submit" id="search-btn">搜 索</button>
+				   </div>
+		   	   </div>
+		   </form>
+		   <div class="dib r rel" style="top:16px;right:10px">
+		       <a href="#" class="button button-rounded button-flat-caution button-large">
+			       <b class="icon-edit"></b> 免费发布信息</a>
+		   </div>
+		</div>
+		<div class="container">
+			<div class="nav">
+				<ul>
+				    <li><a href="" class="active">首页</a></li>
+				    <li><a href="#a">装饰材料</a></li>
+				    <li><a href="#b">建筑材料</a></li>
+				    <li><a href="#c">施工配套</a></li>
+				    <li><a href="">企业名录</a></li>
+				</ul>
+				<span class="r pt15 mr10"><b class="icon-question-sign lh28 gc"></b> <a href="">帮助</a></span>
+				<span class="r pt15 mr10"><b class="icon-trophy lh28 cf60"></b> <a href="">我要推广</a></span>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="content pct100">
+				<div class="main">
+					<div class="box-hd" name="a" id="a">
+						<h3>装饰材料</h3>
+						<div class="box-hd-r"><a href="">更多<b class="icon-double-angle-right gc ml5"></b></a></div>
+					</div>
+					<div class="box-bd">
+						<div class="cat-bd">
+							<label for=""><h4><a href="">地板</a></h4><b class="icon-chevron-right gc ml5"></b></label> 
+							<ul>
+							 <li><a href="">实木地板</a></li>
+								<li><a href="">实木复合地板</a></li>
+								<li><a href="">强化地板</a></li>
+								<li><a href="">强化复合地板</a></li>
+								<li><a href="">软木地板</a></li>
+								<li><a href="">塑胶地板</a></li>
+								<li><a href="">PVC地板</a></li>
+								<li><a href="">运动地板</a></li>
+								<li><a href="">户外地板</a></li>
+								<li><a href="">木塑地板</a></li>
+								<li><a href="">竹地板</a></li>
+								<li><a href="">石木地板</a></li>
+								<li><a href="">石塑地板</a></li>
+								<li><a href="">防静电地板</a></li>
+								<li><a href="">橡胶地板</a></li>
+								<li><a href="">塑胶跑道</a></li>
+								<li><a href="">环氧地坪</a></li>
+								<li><a href="">耐磨地坪</a></li>
+								<li><a href="">艺术地坪</a></li>
+								<li><a href="">地毯</a></li>
+								<li><a href="">地垫</a></li>
+						</ul>
+						</div>
+						<div class="cat-bd">
+							<label for=""><h4><a href="">砖瓦</a></h4><b class="icon-chevron-right gc ml5"></b></label> 
+							<ul>
+								 <li><a href="">砖瓦</a></li>
+								<li><a href="">瓷砖</a></li>
+								<li><a href="">地板砖</a></li>
+								<li><a href="">内墙砖</a></li>
+								<li><a href="">外墙砖</a></li>
+								<li><a href="">马赛克</a></li>
+								<li><a href="">仿古砖</a></li>
+								<li><a href="">抛光砖</a></li>
+								<li><a href="">抛晶砖</a></li>
+								<li><a href="">釉面砖</a></li>
+								<li><a href="">踢脚线</a></li>
+								<li><a href="">植草砖</a></li>
+								<li><a href="">透水砖</a></li>
+								<li><a href="">烧结砖</a></li>
+								<li><a href="">广场砖瓦</a></li>
+								<li><a href="">玻化砖</a></li>
+								<li><a href="">玻纤瓦</a></li>
+								<li><a href="">沥青瓦</a></li>
+								<li><a href="">琉璃瓦</a></li>
+								<li><a href="">耐火砖</a></li>
+								<li><a href="">腰线</a></li>
+							</ul>
+						</div>
+						<div class="cat-bd">
+							<label for=""><h4><a href="">涂料</a></h4><b class="icon-chevron-right gc ml5"></b></label> 
+							<ul>
+								 <li><a href="">乳胶漆</a></li>
+<li><a href="">地坪漆</a></li>
+<li><a href="">真石漆</a></li>
+<li><a href="">木器漆</a></li>
+<li><a href="">木蜡油</a></li>
+<li><a href="">金属漆</a></li>
+<li><a href="">氟碳漆</a></li>
+<li><a href="">玻璃漆</a></li>
+<li><a href="">内墙涂料</a></li>
+<li><a href="">外墙涂料</a></li>
+<li><a href="">液体壁纸</a></li>
+<li><a href="">艺术涂料</a></li>
+<li><a href="">墙衣</a></li>
+<li><a href="">硅藻泥</a></li>
+<li><a href="">马来漆</a></li>
+<li><a href="">金箔漆</a></li>
+<li><a href="">防水涂料</a></li>
+<li><a href="">防火涂料</a></li>
+<li><a href="">防腐涂料</a></li>
+<li><a href="">隔热涂料</a></li>
+<li><a href="">腻子</a></li>
+<li><a href="">防静电涂料</a></li>
+<li><a href="">水性漆</a></li>
+<li><a href="">油漆</a></li>
+							</ul>
+						</div>
+						<div class="cat-bd">
+							<label for=""><h4><a href="">油漆</a></h4><b class="icon-chevron-right gc ml5"></b></label> 
+							<ul>
+								<li><a href="">树脂</a></li>
+<li><a href="">墙艺浮雕漆</a></li>
+<li><a href="">聚酯漆</a></li>
+<li><a href="">聚氨酯漆</a></li>
+<li><a href="">硝基漆</a></li>
+<li><a href="">木工油漆</a></li>
+<li><a href="">防锈漆</a></li>
+<li><a href="">木器漆</a></li>
+<li><a href="">桥梁漆</a></li>
+<li><a href="">专用漆</a></li>
+<li><a href="">水基油漆</a></li>
+<li><a href="">防水油漆</a></li>
+<li><a href="">防火油漆</a></li>
+							</ul>
+						</div>
+						<div class="cat-bd">
+							<label for=""><h4><a href="">吊顶</a></h4><b class="icon-chevron-right gc ml5"></b></label> 
+							<ul>
+								 <li><a href="">吊顶</a></li>
+<li><a href="">天花板</a></li>
+<li><a href="">铝扣板</a></li>
+<li><a href="">阳光板</a></li>
+<li><a href="">采光板</a></li>
+<li><a href="">耐力板</a></li>
+<li><a href="">矿棉板</a></li>
+<li><a href="">石膏板</a></li>
+<li><a href="">石膏线</a></li>
+<li><a href="">软膜天花</a></li>
+<li><a href="">集成吊顶</a></li>
+<li><a href="">龙骨</a></li>
+							</ul>
+						</div>
+						<div class="cat-bd">
+							<label for=""><h4><a href="">灯具</a></h4><b class="icon-chevron-right gc ml5"></b></label> 
+							<ul>
+								 <li><a href="">LED灯</a></li>
+									<li><a href="">节能灯</a></li>
+									<li><a href="">日光灯</a></li>
+									<li><a href="">球泡灯</a></li>
+									<li><a href="">吸顶灯</a></li>
+									<li><a href="">吊灯</a></li>
+									<li><a href="">天花灯</a></li>
+									<li><a href="">射灯</a></li>
+									<li><a href="">筒灯</a></li>
+									<li><a href="">壁灯</a></li>
+									<li><a href="">台灯</a></li>
+									<li><a href="">LED面板灯</a></li>
+									<li><a href="">格栅灯</a></li>
+									<li><a href="">数码管</a></li>
+									<li><a href="">投光灯</a></li>
+									<li><a href="">泛光灯</a></li>
+									<li><a href="">洗墙灯</a></li>
+									<li><a href="">隧道灯</a></li>
+									<li><a href="">景观灯</a></li>
+									<li><a href="">舞台灯</a></li>
+									<li><a href="">LED灯带</a></li>
+									<li><a href="">草坪灯</a></li>
+									<li><a href="">庭院灯</a></li>
+									<li><a href="">地埋灯</a></li>
+									<li><a href="">水底灯</a></li>
+									<li><a href="">工矿灯</a></li>
+									<li><a href="">防爆灯</a></li>
+									<li><a href="">无极灯</a></li>
+									<li><a href="">路灯</a></li>
+									<li><a href="">LED显示屏</a></li>
+									<li><a href="">感应灯</a></li>
+									<li><a href="">灯箱</a></li>
+									<li><a href="">灯具配件</a></li>
+									<li><a href="">轨道灯</a></li>
+									<li><a href="">LED点光源</a></li>
+									<li><a href="">应急灯</a></li>
+									<li><a href="">电子镇流器</a></li>
+									<li><a href="">灭蚊灯</a></li>
+									<li><a href="">净化灯</a></li>
+									<li><a href="">手电筒</a></li>
+									<li><a href="">灯杯</a></li>
+									<li><a href="">灯饰</a></li>
+							</ul>
+						</div>
+						<div class="cat-bd">
+							<label for=""><h4><a href="">门窗</a></h4><b class="icon-chevron-right gc ml5"></b></label> 
+							<ul>
+								 <li><a href="">实木门</a></li>
+<li><a href="">实木复合门</a></li>
+<li><a href="">塑钢门窗</a></li>
+<li><a href="">铝合金门窗</a></li>
+<li><a href="">断桥铝门窗</a></li>
+<li><a href="">不锈钢门窗</a></li>
+<li><a href="">防盗门</a></li>
+<li><a href="">防盗窗</a></li>
+<li><a href="">钢木门</a></li>
+<li><a href="">阳光房</a></li>
+<li><a href="">阳台护栏</a></li>
+<li><a href="">卷帘门</a></li>
+<li><a href="">PVC门</a></li>
+<li><a href="">折叠门</a></li>
+<li><a href="">推拉门</a></li>
+<li><a href="">隔断门</a></li>
+<li><a href="">高分子门</a></li>
+<li><a href="">免漆门</a></li>
+<li><a href="">烤漆门</a></li>
+<li><a href="">百叶窗</a></li>
+<li><a href="">木塑门</a></li>
+<li><a href="">生态门</a></li>
+<li><a href="">玻璃门</a></li>
+<li><a href="">铝包木门窗</a></li>
+<li><a href="">自动门</a></li>
+<li><a href="">旋转门</a></li>
+<li><a href="">隔音门</a></li>
+<li><a href="">铁艺大门</a></li>
+<li><a href="">铸铝门</a></li>
+<li><a href="">铜门</a></li>
+<li><a href="">防火门</a></li>
+<li><a href="">伸缩门</a></li>
+<li><a href="">车库门</a></li>
+<li><a href="">隐形防盗网</a></li>
+<li><a href="">无框阳台窗</a></li>
+<li><a href="">天窗</a></li>
+<li><a href="">快速门</a></li>
+<li><a href="">工业门</a></li>
+<li><a href="">隐形纱窗</a></li>
+<li><a href="">地弹簧</a></li>
+<li><a href="">开窗器</a></li>
+<li><a href="">开门机</a></li>
+<li><a href="">闭门器</a></li>
+<li><a href="">门帘</a></li>
+<li><a href="">门花</a></li>
+<li><a href="">门窗配件</a></li>
+<li><a href="">门窗型材</a></li>
+							</ul>
+						</div>
+						<div class="cat-bd">
+							<label for=""><h4><a href="">楼梯</a></h4><b class="icon-chevron-right gc ml5"></b></label> 
+							<ul>
+								 <li><a href="">楼梯</a></li>
+<li><a href="">楼梯</a></li>
+<li><a href="">钢木楼梯</a></li>
+<li><a href="">实木楼梯</a></li>
+<li><a href="">不锈钢楼梯</a></li>
+<li><a href="">铁艺楼梯</a></li>
+<li><a href="">玻璃楼梯</a></li>
+<li><a href="">伸缩楼梯</a></li>
+<li><a href="">旋转楼梯</a></li>
+<li><a href="">楼梯立柱</a></li>
+<li><a href="">楼梯扶手</a></li>
+<li><a href="">楼梯配件</a></li>
+							</ul>
+						</div>
+						<div class="cat-bd">
+							<label for=""><h4><a href="">隔断</a></h4><b class="icon-chevron-right gc ml5"></b></label> 
+							<ul>
+<li><a href="">办公隔断</a></li>
+<li><a href="">玻璃隔断</a></li>
+<li><a href="">活动隔断</a></li>
+<li><a href="">隔断墙</a></li>
+<li><a href="">卫生间隔断</a></li>
+							</ul>
+						</div>
+						<div class="cat-bd">
+							<label for=""><h4><a href="">锁具</a></h4><b class="icon-chevron-right gc ml5"></b></label> 
+							<ul>
+<li><a href="">酒店锁</a></li>
+<li><a href="">感应锁</a></li>
+<li><a href="">电子锁</a></li>
+<li><a href="">家具锁</a></li>
+<li><a href="">密码锁</a></li>
+<li><a href="">指纹锁</a></li>
+<li><a href="">保险柜</a></li>
+<li><a href="">门锁</a></li>
+<li><a href="">挂锁</a></li>
+<li><a href="">消防通道锁</a></li>
+<li><a href="">车位锁</a></li>
+<li><a href="">特殊锁</a></li>
+							</ul>
+						</div>	
+					</div>
+
+					<div class="box-hd" name="b" id="b">
+						<h3>建筑材料</h3>
+						<div class="box-hd-r"><a href="">更多</a></div>
+					</div>
+					<div class="box-bd">
+						<div class="cat-bd">
+							<label for=""><h4><a href="">涂料</a></h4><b class="icon-chevron-right gc ml5"></b></label> 
+							<ul>
+								 <li><a href="">乳胶漆</a></li>
+<li><a href="">地坪漆</a></li>
+<li><a href="">真石漆</a></li>
+<li><a href="">木器漆</a></li>
+<li><a href="">木蜡油</a></li>
+<li><a href="">金属漆</a></li>
+<li><a href="">氟碳漆</a></li>
+<li><a href="">玻璃漆</a></li>
+<li><a href="">内墙涂料</a></li>
+<li><a href="">外墙涂料</a></li>
+<li><a href="">液体壁纸</a></li>
+<li><a href="">艺术涂料</a></li>
+<li><a href="">墙衣</a></li>
+<li><a href="">硅藻泥</a></li>
+<li><a href="">马来漆</a></li>
+<li><a href="">金箔漆</a></li>
+<li><a href="">防水涂料</a></li>
+<li><a href="">防火涂料</a></li>
+<li><a href="">防腐涂料</a></li>
+<li><a href="">隔热涂料</a></li>
+<li><a href="">腻子</a></li>
+<li><a href="">防静电涂料</a></li>
+<li><a href="">水性漆</a></li>
+<li><a href="">油漆</a></li>
+							</ul>
+						</div>
+						<div class="cat-bd">
+							<label for=""><h4><a href="">油漆</a></h4><b class="icon-chevron-right gc ml5"></b></label> 
+							<ul>
+								<li><a href="">树脂</a></li>
+<li><a href="">墙艺浮雕漆</a></li>
+<li><a href="">聚酯漆</a></li>
+<li><a href="">聚氨酯漆</a></li>
+<li><a href="">硝基漆</a></li>
+<li><a href="">木工油漆</a></li>
+<li><a href="">防锈漆</a></li>
+<li><a href="">木器漆</a></li>
+<li><a href="">桥梁漆</a></li>
+<li><a href="">专用漆</a></li>
+<li><a href="">水基油漆</a></li>
+<li><a href="">防水油漆</a></li>
+<li><a href="">防火油漆</a></li>
+							</ul>
+						</div>
+						<div class="cat-bd">
+							<label for=""><h4><a href="">吊顶</a></h4><b class="icon-chevron-right gc ml5"></b></label> 
+							<ul>
+								 <li><a href="">吊顶</a></li>
+<li><a href="">天花板</a></li>
+<li><a href="">铝扣板</a></li>
+<li><a href="">阳光板</a></li>
+<li><a href="">采光板</a></li>
+<li><a href="">耐力板</a></li>
+<li><a href="">矿棉板</a></li>
+<li><a href="">石膏板</a></li>
+<li><a href="">石膏线</a></li>
+<li><a href="">软膜天花</a></li>
+<li><a href="">集成吊顶</a></li>
+<li><a href="">龙骨</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="box-hd" name="c" id="c">
+						<h3>施工配套</h3>
+						<div class="box-hd-r"><a href="">更多</a></div>
+					</div>
+					<div class="box-bd">
+						<div class="cat-bd">
+							<label for=""><h4><a href="">涂料</a></h4><b class="icon-chevron-right gc ml5"></b></label> 
+							<ul>
+								 <li><a href="">乳胶漆</a></li>
+<li><a href="">地坪漆</a></li>
+<li><a href="">真石漆</a></li>
+<li><a href="">木器漆</a></li>
+<li><a href="">木蜡油</a></li>
+<li><a href="">金属漆</a></li>
+<li><a href="">氟碳漆</a></li>
+<li><a href="">玻璃漆</a></li>
+<li><a href="">内墙涂料</a></li>
+<li><a href="">外墙涂料</a></li>
+<li><a href="">液体壁纸</a></li>
+<li><a href="">艺术涂料</a></li>
+<li><a href="">墙衣</a></li>
+<li><a href="">硅藻泥</a></li>
+<li><a href="">马来漆</a></li>
+<li><a href="">金箔漆</a></li>
+<li><a href="">防水涂料</a></li>
+<li><a href="">防火涂料</a></li>
+<li><a href="">防腐涂料</a></li>
+<li><a href="">隔热涂料</a></li>
+<li><a href="">腻子</a></li>
+<li><a href="">防静电涂料</a></li>
+<li><a href="">水性漆</a></li>
+<li><a href="">油漆</a></li>
+							</ul>
+						</div>
+						<div class="cat-bd">
+							<label for=""><h4><a href="">油漆</a></h4><b class="icon-chevron-right gc ml5"></b></label> 
+							<ul>
+								<li><a href="">树脂</a></li>
+<li><a href="">墙艺浮雕漆</a></li>
+<li><a href="">聚酯漆</a></li>
+<li><a href="">聚氨酯漆</a></li>
+<li><a href="">硝基漆</a></li>
+<li><a href="">木工油漆</a></li>
+<li><a href="">防锈漆</a></li>
+<li><a href="">木器漆</a></li>
+<li><a href="">桥梁漆</a></li>
+<li><a href="">专用漆</a></li>
+<li><a href="">水基油漆</a></li>
+<li><a href="">防水油漆</a></li>
+<li><a href="">防火油漆</a></li>
+							</ul>
+						</div>
+						<div class="cat-bd">
+							<label for=""><h4><a href="">吊顶</a></h4><b class="icon-chevron-right gc ml5"></b></label> 
+							<ul>
+								 <li><a href="">吊顶</a></li>
+<li><a href="">天花板</a></li>
+<li><a href="">铝扣板</a></li>
+<li><a href="">阳光板</a></li>
+<li><a href="">采光板</a></li>
+<li><a href="">耐力板</a></li>
+<li><a href="">矿棉板</a></li>
+<li><a href="">石膏板</a></li>
+<li><a href="">石膏线</a></li>
+<li><a href="">软膜天花</a></li>
+<li><a href="">集成吊顶</a></li>
+<li><a href="">龙骨</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="side">
+					<div class="box-hd">
+						<h3>推荐供应信息</h3>
+						<div class="box-hd-r"><a href="">更多<b class="icon-double-angle-right gc ml5"></b></a></div>
+					</div>
+					<div class="list-bd">
+						<ul>
+						<li><b class="icon-angle-right gc mr5"></b><a href="http://t.huangye88.com/forum.php?mod=viewthread&amp;tid=109032" target="_blank">向我膜拜吧~！电话接到手软。。。dsdsdsdsdsd</a></li>
+						<li><b class="icon-angle-right gc mr5"></b><a href="http://t.huangye88.com/forum.php?mod=viewthread&amp;tid=136286" target="_blank">坚持的效果、你坚持了么？  效果亮</a></li>
+						<li><b class="icon-angle-right gc mr5"></b><a href="http://t.huangye88.com/forum.php?mod=viewthread&amp;tid=130366" target="_blank">我的帖子又被收录了</a></li>
+						<li><b class="icon-angle-right gc mr5"></b><a href="http://t.huangye88.com/forum.php?mod=viewthread&amp;tid=38139" target="_blank">发的信息被百度收录了！嘻嘻</a></li>
+						<li><b class="icon-angle-right gc mr5"></b><a href="http://t.huangye88.com/forum.php?mod=viewthread&amp;tid=137016" target="_blank">全亮应该会更好看些吧</a></li>
+						<li><b class="icon-angle-right gc mr5"></b><a href="http://t.huangye88.com/forum.php?mod=viewthread&amp;tid=137204" target="_blank">360真的碉堡了，速速围观，尼玛，</a></li>
+						<li><b class="icon-angle-right gc mr5"></b><a href="http://t.huangye88.com/forum.php?mod=viewthread&amp;tid=137212" target="_blank">阳光明媚出来晒下</a></li>
+						<li><b class="icon-angle-right gc mr5"></b><a href="http://t.huangye88.com/forum.php?mod=viewthread&amp;tid=135503" target="_blank">刚发没多久的帖子出来晒晒</a></li>
+						<li><b class="icon-angle-right gc mr5"></b><a href="http://t.huangye88.com/forum.php?mod=viewthread&amp;tid=137182" target="_blank">怎么减肥？</a></li>
+						<li><b class="icon-angle-right gc mr5"></b><a href="http://t.huangye88.com/forum.php?mod=viewthread&amp;tid=137014" target="_blank">刚刚发了6条信息，明天一来上班应</a></li>
+						</ul>
+					</div>
+					<div class="box-hd">
+						<h3>最新注册公司信息</h3>
+						<div class="box-hd-r"><a href="">更多<b class="icon-double-angle-right gc ml5"></b></a></div>
+					</div>
+					<div class="list-bd">
+						<ul>
+						<li><b class="icon-angle-right gc mr5"></b><a href="http://t.huangye88.com/forum.php?mod=viewthread&amp;tid=109032" target="_blank">北京xxx公司</a></li>
+						<li><b class="icon-angle-right gc mr5"></b><a href="http://t.huangye88.com/forum.php?mod=viewthread&amp;tid=136286" target="_blank">坚持的效果、你坚持了么？  效果亮</a></li>
+						<li><b class="icon-angle-right gc mr5"></b><a href="http://t.huangye88.com/forum.php?mod=viewthread&amp;tid=130366" target="_blank">我的帖子又被收录了</a></li>
+						<li><b class="icon-angle-right gc mr5"></b><a href="http://t.huangye88.com/forum.php?mod=viewthread&amp;tid=38139" target="_blank">发的信息被百度收录了！嘻嘻</a></li>
+						<li><b class="icon-angle-right gc mr5"></b><a href="http://t.huangye88.com/forum.php?mod=viewthread&amp;tid=137016" target="_blank">全亮应该会更好看些吧</a></li>
+						<li><b class="icon-angle-right gc mr5"></b><a href="http://t.huangye88.com/forum.php?mod=viewthread&amp;tid=137204" target="_blank">360真的碉堡了，速速围观，尼玛，</a></li>
+						<li><b class="icon-angle-right gc mr5"></b><a href="http://t.huangye88.com/forum.php?mod=viewthread&amp;tid=137212" target="_blank">阳光明媚出来晒下</a></li>
+						<li><b class="icon-angle-right gc mr5"></b><a href="http://t.huangye88.com/forum.php?mod=viewthread&amp;tid=135503" target="_blank">刚发没多久的帖子出来晒晒</a></li>
+						<li><b class="icon-angle-right gc mr5"></b><a href="http://t.huangye88.com/forum.php?mod=viewthread&amp;tid=137182" target="_blank">怎么减肥？</a></li>
+						<li><b class="icon-angle-right gc mr5"></b><a href="http://t.huangye88.com/forum.php?mod=viewthread&amp;tid=137014" target="_blank">刚刚发了6条信息，明天一来上班应</a></li>
+						</ul>
+					</div>
+					
+				</div><!--side-->
+				
+					
+			</div>
+		</div>
+		<div class="container">
+			<div class="hero">中国建材网是中国建材行业门户网站,建材设备产品网络交易平台,中国建材网免费提供供求信息发布平台,免费展示最新最全建材行业供求信息,寻找商机就到中国建材网。中国建材网是中国建材行业门户网站,建材设备产品网络交易平台,中国建材网免费提供供求信息发布平台,免费展示最新最全建材行业供求信息,寻找商机就到中国建材网。</div>
+			<div class="links">
+				<div class="box-hd">
+					<h3>友情链接</h3>
+					<div class="box-hd-r">联系QQ：23234234</div>
+				</div>
+				<div class="links-bd">
+						<ul>
+					    <li><a href="">水电费</a></li>
+					    <li><a href="">水电费</a></li>
+					    <li><a href="">水电费</a></li>
+					    <li><a href="">水电费</a></li>
+					    <li><a href="">水电费</a></li>
+					    <li><a href="">水电费</a></li>
+					    <li><a href="">水电费</a></li>
+					    <li><a href="">水电费</a></li>
+					    <li><a href="">水电费</a></li>
+					    <li><a href="">水电费</a></li>
+					    <li><a href="">水电费</a></li>
+					    <li><a href="">水电费</a></li>
+					    <li><a href="">水电费</a></li>
+						</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer mt20">
+			<div class="tc btd pt10 pb10 lh26">© 2013 乔木应用
+			<span class="gc ml5 mr5">|</span>
+			<a href="" >关于我们</a>
+			<span class="gc ml5 mr5">|</span>
+			<a href="" >关于我们</a>
+			<span class="gc ml5 mr5">|</span><a href="http://www.miibeian.gov.cn/" rel="nofollow" class="tdn g9 ml5">京ICP证060405</a>
+			</div>
+		</div>
+	</body>
+</html>
