@@ -35,6 +35,7 @@ img{border:0;}
 .fv{font-family: Verdana;}
 .fs{font-family:'simsun';}
 .fw{font-family:'microsoft yahei';}
+.fnum{font-family: impact;}
 /*font-style*/
 .n{font-weight:normal; font-style:normal;}
 .b{font-weight:bold;}
@@ -186,6 +187,7 @@ img{border:0;}
 .mr-3{margin-right:-3px;}
 .mt-3{margin-top:-3px;}
 .mb-3{margin-bottom:-3px;}
+.mt-5{margin-top:-5px;}
 .mb-15{margin-bottom:-15px;}
 .ml-20{margin-left:-20px;}
 .mr-20{margin-right:-20px;}
@@ -1686,9 +1688,31 @@ textarea::-webkit-input-placeholder {
      -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
 }
- 
 
-
+.content p {
+font: 500 0.875em/1.8 Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+display: block;
+font-size:14px;
+color:#444333;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: 500;
+    *font-weight: 800;
+    font-family: Helvetica Neue, Microsoft Yahei,Hiragino Sans GB,WenQuanYi Micro Hei,sans-serif;
+    color:#333;
+}
+hr{
+    border:none;
+    border-bottom:1px dotted #cfcfcf;
+    margin-bottom:10px;
+    *color:pink;*filter:chroma(color=pink);
+    height:10px;
+    *margin:-7px 0 2px;
+} 
 
 
 
