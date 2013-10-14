@@ -26,28 +26,59 @@
 			<div class="dib p10" style="margin-top:-40px;">
 					<div class="form">
 					<div class="form-c mb15 success">
-						<label>分类：</label>
-						<span class="dib f14">工业品»&nbsp;汽车配件网»&nbsp;汽车横向件»&nbsp;汽车塑料件</span>
+						<label><em class="red mr5">*</em>信息标题：</label>
+						<input type="text" name="test" value="" class="w400" />
+						<span class="help">尽可能包含主要关键词，语句通顺，限30个字符</span>	
 					</div>
-					<div class="form-c mb15 success">
+					<div class="form-c mb15">
+						<label class="vt"><em class="red mr5">*</em>内容：</label>
+						<textarea type="text" name="content" rows="9" class="w500"></textarea>
+						<span class="help vt dib w160 lh24">限制6-10000字，建议从产品性能、用途、包装、售后服务等方面来描述。<br><b class="n green">信息内容超过200字才有利于百度收录排名。</b></span>	
+					</div>
+					<div class="form-c mb15">
+						<label><em class="red mr5">*</em>信息类型：</label>
+						<input type="radio" name="infotype" value="1" checked="checked" /><span class="ml5 mr10 f14 vn">供应</span>
+						<input type="radio" name="infotype" value="0" /><span class="ml5 f14 vn">求购</span>
+					</div>
+					<div class="form-c mb15">
+						<label><em class="red mr5">*</em>分类：</label>
+						<div class="dib">
+						<select class="w120">
+						  <option>全国</option>
+						  <option>北京</option>
+						  <option>上海</option>
+						  <option>广州</option>
+						</select>
+						<select class="w120">
+						  <option>海淀区</option>
+						  <option>朝阳区</option>
+						  <option>东城区</option>
+						  <option>昌平区</option>
+						</select>
+						</div>
+						<span class="help">请选择分类</span>	
+					</div>
+					<div class="form-c mb15">
 						<label>面向地区：</label>
-						<input type="text" name="test" value="" />
-						<span class="help">请输入用户名</span>	
+						<div class="dib">
+						<select class="w120">
+						  <option>全国</option>
+						  <option>北京</option>
+						  <option>上海</option>
+						  <option>广州</option>
+						</select>
+						<select class="w120">
+						  <option>海淀区</option>
+						  <option>朝阳区</option>
+						  <option>东城区</option>
+						  <option>昌平区</option>
+						</select>
+						</div>
+						<span class="help">请选择地区</span>	
 					</div>
 					<div class="form-c mb15">
-						<label>用户名</label>
-						<input type="text" name="test" value="" />
-						<span class="help">请输入用户名</span>	
-					</div>
-					<div class="form-c mb15">
-						<label>密码</label>
-						<input type="password" name="test" value=""  />
-						<span class="help">请输入密码</span>	
-					</div>
-					<div class="form-c mb15">
-						<label>电子邮箱</label>
-						<input type="email" name="test" value=""  />
-						<span class="help">请输入电子邮箱</span>	
+						<label>图片上传：</label>
+						
 					</div>
 					<div class="form-c error">
 						<label>验证码</label>
@@ -55,13 +86,9 @@
 						<img class="mb-15 ml10" src="http://static.huangye88.com/images/new/logoi.jpg" width="" height="30" alt="" /> <a href="" title="重新获取验证码"><b class="icon icon-repeat g9"></b></a>
 						<span class="ml10 help">验证码不对</span>	
 					</div>
-					<div class="form-c mb15">
-						<label></label>
-						<input type="checkbox" checked />
-						<span class="ml10">我已阅读并同意<a href="" class="blue">《xxx网使用协议》</a></span>
-					</div>
+					
 					<div style="margin-left:113px;" class="mt20">
-						<button name="test" type="button" value="val" class="button button-flat-caution button-rounded">立即注册</button>
+						<button name="test" type="button" value="val" class="button button-flat-caution button-rounded button-large">马上发布</button>
 					</div>
 					</div>	
 			</div>

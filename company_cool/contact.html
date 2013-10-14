@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>联系我们</title> 
+	<meta name="description" content="联系我们"/>
+	<meta name="keywords" content="联系我们" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<!--start: Header -->
+	<header>
+		<!--start: Container -->
+		<div class="container">
+			<!--start: Navbar -->
+			<div class="navbar navbar-inverse">
+	    		<div class="navbar-inner">
+	          		<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+	            		<span class="icon-bar"></span>
+	            		<span class="icon-bar"></span>
+	            		<span class="icon-bar"></span>
+	          		</a>
+				<a class="brand fixbrand" href="index.html"><i class="ico-charts circle"></i><span>上海博湖机械设备有限公司</span></a>
+	          		<div class="nav-collapse collapse">
+	            		<ul class="nav">
+		            		<li><a href="index.html">公司首页</a></li>
+	              			<li><a href="about.html">关于我们</a></li>
+							<li><a href="product.html">产品展示</a></li>
+							<li><a href="messages.html">供求信息</a></li>
+	              			<li class="active"><a href="contact.html">联系我们</a></li>
+	            		</ul>
+	          		</div>
+	        	</div>
+	      	</div>
+			<!--end: Navbar -->
+		</div>
+		<!--end: Container-->			
+	</header>
+	<!--end: Header-->
+	<!-- start: Map -->
+	<div>
+		<!-- starts: Google Maps -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<div id="googlemaps-container-top"></div>
+		<div id="googlemaps" class="google-map google-map-full"></div>
+		<div id="googlemaps-container-bottom"></div>
+		<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+		<script src="js/jquery.gmap.min.js"></script>
+		<script type="text/javascript">
+			$('#googlemaps').gMap({
+				maptype: 'ROADMAP',
+				scrollwheel: false,
+				zoom: 13,
+				markers: [
+					{
+						address: '北京回龙观', // Your Adress Here
+						html: '',
+						popup: false,
+					}
+
+				],
+
+			});
+		</script>
+		<!-- end: Google Maps -->
+	</div>
+	<!-- end: Map -->	
+	<!-- start: Wrapper -->	
+	<div id="wrapper">		
+		<!-- start: Container -->	
+		<div class="container">
+			<!-- start: Row -->
+			<div class="row">
+				<!-- start: Contact Info -->
+				<div class="span4">
+					<div class="title"><h3>联系我们</h3></div>
+					<p>	
+						地址：北京市海淀区嘉华大厦B506
+					</p>	
+					<p>	
+						电话：01062310252
+					</p>
+					<p>	
+						传真：01062354565
+					</p>
+					<p>
+						Email: jixie@3992.com
+					</p>
+					<p>
+					    网址：www.xxx.com
+					</p>
+				</div>
+				<!-- end: Contact Info -->		
+				<!-- start: Contact Form -->
+				<div class="span4">
+					<div class="title"><h3>联系留言</h3></div>
+
+					<!-- start: Contact Form -->
+					<div id="contact-form">
+
+						<form method="post" action="contact.html">
+
+							<fieldset>
+								<div class="clearfix">
+									<label for="name"><span>姓名：</span></label>
+									<div class="input">
+										<input tabindex="1" size="18" id="name" name="name" type="text" value="">
+									</div>
+								</div>
+
+								<div class="clearfix">
+									<label for="email"><span>Email：</span></label>
+									<div class="input">
+										<input tabindex="2" size="25" id="email" name="email" type="text" value="" class="input-xlarge">
+									</div>
+								</div>
+
+								<div class="clearfix">
+									<label for="message"><span>内容：</span></label>
+									<div class="input">
+										<textarea tabindex="3" class="input-xlarge" id="message" name="body" rows="7"></textarea>
+									</div>
+								</div>
+
+								<div class="actions">
+									<button tabindex="3" type="submit" class="btn btn-succes btn-large">发送</button>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+					<!-- end: Contact Form -->
+				</div>
+				<!-- end: Contact Form -->
+
+				<!-- start: Social Sites -->
+				<div class="span4">
+					<div class="title"><h3>关注我们</h3></div>
+					 新浪微博地址：
+					 微信二维码：
+				</div>
+				<!-- end: Social Sites -->
+			</div>
+			<!-- end: Row -->
+
+		</div>
+		<!-- end: Container -->
+				
+  	</div>
+	<!-- end: Wrapper  -->			
+
+    <!-- start: Footer Menu -->
+	<div id="footer-menu" class="hidden-tablet hidden-phone">
+
+		<!-- start: Container -->
+		<div class="container">
+
+			<!-- start: Row -->
+			<div class="row">
+
+				<!-- start: Footer Menu Logo -->
+				<div class="span6">
+					<div id="footer-menu-logo">
+						<div id="logo-chart"></div><a class="brand" href="contact.html#">3992机械网技术支持</a>
+					</div>
+				</div>
+				<!-- end: Footer Menu Logo -->
+
+				<!-- start: Footer Menu Links-->
+				<div class="span5">
+
+					<div id="footer-menu-links">
+
+						<ul id="footer-nav">
+
+							<li><a href="index.html">公司首页</a></li>
+
+							<li><a href="about.html">关于我们</a></li>
+
+							<li><a href="services.html">产品展示</a></li>
+
+							<li><a href="pricing.html">供求信息</a></li>
+
+							<li ><a href="contact.html">联系我们</a></li>
+
+						</ul>
+
+					</div>
+
+				</div>
+				<!-- end: Footer Menu Links-->
+
+				<div class="span1">
+					<div id="footer-menu-back-to-top">
+						<a href="#top"></a>
+					</div>
+				</div>
+			</div>
+			<!-- end: Row -->
+		</div>
+		<!-- end: Container  -->	
+	</div>	
+	<!-- end: Footer Menu -->
+<!-- start: Java Script -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery-1.8.2.js"></script>
+<script src="js/bootstrap.js"></script>
+<!-- end: Java Script -->
+</body>
+</html>
